@@ -23,10 +23,7 @@ elif [ $# -eq 3 ] && [ "$3" == "change" ]; then
 
   if [ -n "$result" ]; then
     sed -i "s/^$1: .*/$1: $2/" "$file"
-    echo "Changed $1's argument to: $2"
-  else
-    echo "No matching entry found for $1."
-  fi
+    echo "Changed $1's pass to: $2"
 
 else
   exit 1
